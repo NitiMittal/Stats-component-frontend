@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+:root {
+  --vDarkBlue: hsl(233, 47%, 7%);
+  --darkBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --mainPara: hsl(0, 0%, 100%, 0.75);
+  --transparentWhite: hsla(0, 0%, 100%, 0.6);
+}
+body {
+  background-color: var(--vDarkBlue);
+}
+
+.container {
+  width: 80%;
+  margin: 3rem auto;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.image-container {
+  width: 100%;
+
+  position: relative;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tint {
+  position: absolute;
+  background-color: hsl(277, 73%, 47%);
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0.7;
+}
+.mobile-img,
+.desktop-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.info {
+  background-color: var(--darkBlue);
+  padding: 2.2rem;
+  text-align: center;
+  margin-top: 0rem;
+}
+
+h1,
+h3 {
+  color: var(--white);
+}
+h1 span {
+  color: var(--softViolet);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+p {
+  color: var(--transparentWhite);
+
+  font-size: 1rem;
+  line-height: 1.9;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  color: var(--transparentWhite);
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.stats h3 {
+  font-size: 1.3rem;
+}
+.stats span {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--white);
+  margin-top: 0.7rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop-img {
+    display: none;
+  }
+}
