@@ -25,7 +25,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Links
 
 - Solution URL: https://github.com/NitiMittal/Stats-component-frontend
-- Live Site URL: https://profilecarddemo.netlify.app/
+- Live Site URL: https://stats-demo-solution.netlify.app/
 
 ## My process
 
